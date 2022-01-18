@@ -1,0 +1,50 @@
+.contador{
+  color: $colorPrincipal;
+  background-color: #ffffff;
+  width: 80%;
+  text-align: center;
+  // border-radius: 8px;
+  // font-size: 11.5px;
+  letter-spacing: 1px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-family: $fuenteResaltado;
+  // text-shadow: 0px 0px 10px #000000;
+}
+.fecha h5{
+  color: $verde;
+  text-align: center;
+  font-size: 20px;
+  font-family: $fuenteResaltado;
+  letter-spacing: 1px;
+  text-shadow: 0px 0px 15px #000000;
+}
+.contenedor_contador{
+  // border-left: 3px solid white;
+  // padding-left: 10px;
+  // position:absolute;
+  // top: 0;
+}
+.fecha h4{
+  font-size: 2.5rem;
+  font-family: $fuenteResaltado;
+  text-shadow: 0px 0px 15px #000000;
+  color: white;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+  // .dia{
+  //   color: $verde;
+  // }
+  // .mes{
+  //   color: $cielo;
+  // }
+  // .anio{
+  //   color: $amarillo;
+  // }
+}
+.fecha {
+  text-transform: uppercase;
+  color: $colorPrincipal;
+  align-content: center;
+}

@@ -1,0 +1,107 @@
+main{
+  font-family: $fuenteContenido;
+  background-color: $cielo;
+}
+.bgPrincipal{
+  background-color: $colorPrincipal;
+}
+.bgSecundario{
+  background-color: $azul;
+}
+.bgCielo{
+  background-color: $cielo;
+}
+
+.seccion{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+@font-face {
+  font-family: "Antonio Bold";
+  src : url("font/Antonio-Bold.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Antonio Regular";
+  src: url("font/Antonio-Regular.ttf");
+  font-display: swap;
+}
+
+@font-face{
+  font-family: "Avenir Black";
+  src: url("font/AvenirLTStd-Black.otf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Avenir Book";
+  src: url("font/AvenirLTStd-Book.otf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Avenir Heavy";
+  src: url("font/AvenirLTStd-Heavy.otf");
+  font-display: swap;
+}
+
+// ===========   WUP  fonts   ============
+@font-face {
+  font-family: "Arial";
+  src: url("fonts/ARIAL.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Arial Bold";
+  src: url("fonts/ARIALBD.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Arial Black";
+  src: url("fonts/ArialCEMTBlack.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Arial Light";
+  src: url("fonts/ARIALLGT.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Arial Medium";
+  src: url("fonts/ArialMdn.ttf");
+  font-display: swap;
+}
+
+
+//============   Títulos   ================
+.tituloPV{
+  @include tituloPrincipal($verde);
+}
+.tituloPB{
+  @include tituloPrincipal($blanco);
+}
+.tituloPA{
+  @include tituloPrincipal($colorPrincipal)
+}
+
+
+.subtituloB{
+  @include subtitulo($colorPrincipal, $blanco);
+}
+
+
+.fotos_ciudades{
+  display: flex;
+  margin-top: 80px;
+  padding-bottom: 50px;
+  justify-content: space-evenly;
+}
+.img_ciudades{
+  height: 200px;
+}
+
+.img-medium{
+  height: 150px;
+}

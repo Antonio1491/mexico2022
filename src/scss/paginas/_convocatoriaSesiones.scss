@@ -1,0 +1,31 @@
+.container {
+  display: grid;
+  grid-template-columns: 40% 60%; 
+  @include telefono{
+    display: block;
+  }
+}
+.instrucciones {
+  background-color: $cielo;
+  padding: 20px;
+  text-align: justify;
+  font-size: 14px;
+  color: $colorPrincipal;
+  height: auto;
+}
+
+.formPropuestas{
+
+  .encabezado {
+    color: $colorPrincipal;
+    text-transform: uppercase;
+    padding: 10px;
+    font-weight: bold;
+    letter-spacing: .5px;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #e2dfdf; 
+  }
+  .avatar{
+    height: 60px;
+  }
+}

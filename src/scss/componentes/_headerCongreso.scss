@@ -1,0 +1,126 @@
+#portada{
+  overflow: hidden;
+  height: 85vh;
+  background-image: url("../img/back.jpg");
+  // background-image: url('../img/portada.svg');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  // background-color: $azul;
+  position: relative;
+  
+  @media screen and (max-width: 580px){
+    // background-image: url('../img/portada.svg');
+    // background-image: url("../img/paisajeMovil.png");
+    height: 92vh;
+  }
+  .contenedor_redes_principal{
+    position: absolute;
+    bottom: 60px;
+    z-index: 2;
+    right: 0;
+    margin-right: 5px;
+    .item_icon_redes a img{
+      height: 40px;
+      margin-top: 5px;
+      transition: 300ms;
+      &:hover{
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+video{
+  /* hace que las coordenadas sean relativas a la ventana*/
+  // position: fixed;
+  overflow: hidden;
+  position: relative;
+
+
+	transform: translateX(0%) translateY(-25%);
+	-webkit-transform: translateX(0%) translateY(-25%);
+  -moz-transform: translateX(0%) translateY(-25%);
+  
+//   min-width: 100%;
+//  min-height: 100%;
+//  width: auto;
+//  height: auto;
+
+	z-index:-10;
+	-moz-z-index:-10;
+	-webkit-z-index:-10;
+}
+.contenedorPortada{
+  position: absolute;
+  bottom:0;
+  width: 100%;
+  z-index: 1;
+  -moz-z-index: 1;
+  -webkit-z-index:1;
+  display: flex;
+  row-gap: 3rem;
+  justify-content: center;
+  // grid-row: repeat(2, 30vh) ;
+  align-items: center;
+  justify-items: center;
+  border: 4px colid red;
+  bottom: 5vh;
+  flex-direction: column;
+  
+  }
+  .resultados{
+    background: rgba(255, 255, 255, 0.6);
+    color: $colorPrincipal;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    // border: 2px solid $aqua;
+    h5{
+      font-family: "Avenir Bold";
+      letter-spacing: 1px;
+      font-size: 15px;
+    }
+    strong{
+      text-transform: lowercase;
+    }
+    span{
+      text-transform: lowercase;
+      text-align: center;
+      font-size: 12px;
+      font-weight: bold;
+    }
+  }
+
+.itemContenidoPortada{
+  text-transform: uppercase;
+  color: $colorPrincipal;
+  // border: 3px solid $rojo;
+  align-content: center;
+  justify-content: center;
+  
+}
+// #reproducir img{
+//   height: 100px;
+//   margin-right: 20px;
+// }
+.cta_principal{
+  display: flex;
+  justify-content: center;
+  margin-top: 4vh;
+  .frase{
+    color: $blanco;
+    font-family: $fuenteResaltado;
+    letter-spacing: 0.5px;
+    text-transform: initial;
+    font-size: 1.4rem;
+    margin: 0 15%;
+    text-shadow: 0px 0px 10px #2c2c2c;
+    margin-bottom: 0;
+    span{
+      color: $verde;
+    }
+    small{
+      font-size: 15px;
+    }
+}
+}

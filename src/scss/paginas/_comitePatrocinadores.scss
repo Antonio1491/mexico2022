@@ -1,0 +1,47 @@
+#comite{
+  img{
+    height: 170px;
+    margin-top: 13px;
+  }
+  .directorio{
+    h5{
+      color: $azul;
+      font-size: 16px;
+      font-family: "Avenir bold";
+    }
+    span{
+      color: $colorPrincipal;
+      font-size: 14px;
+      font-family: "Antonio Bold";
+    }
+    p{
+      font-size: 12px;
+      display: block;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+#patrocinadores{
+  // margin: 0px 0px 40px 0px;
+  padding-top: 3rem;
+  .contenedor_patrocinadores{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .item_patrocinador{
+    text-align: center;
+    margin: 20px;
+    figure img{
+      height: 100px;
+    }
+  }
+  h4{
+    @include subtitulo($blanco, $azul);
+  }
+  .descripcion_principal{
+    margin-top: 2rem;
+  }
+  
+}

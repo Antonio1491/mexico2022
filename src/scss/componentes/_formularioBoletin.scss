@@ -1,0 +1,40 @@
+#registro{
+  color: $colorPrincipal;
+  background-color: $cielo;
+  padding-top: 50px ;
+  padding-bottom: 50px ;
+  margin: 0 auto;
+ p{
+    color: $colorPrincipal;
+    font-family:$fuenteContenido ;
+  }
+  form input{
+    border-radius: 1em;
+    margin:0px;
+  }
+  form input[type="submit"]{
+    background: $colorPrincipal;
+    font-family: $fuenteTitulo1;
+    color: $blanco;
+    letter-spacing: 1px;
+    padding-left: 30px;
+    padding-right: 30px;
+    float: left;
+    cursor: pointer;
+
+  }
+  span{
+    font-size: 12px;
+  }
+  label{
+    color: $azul;
+    margin-top: 10px;
+  }
+}
+
+
+#mc-embedded-subscribe{
+  background: $azul !important;
+  font-family: "Antonio Ligera";
+  letter-spacing: 1px !important;
+}

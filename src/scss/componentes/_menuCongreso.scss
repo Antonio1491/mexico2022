@@ -1,0 +1,129 @@
+#encabezado{
+  font-family: $fuenteResaltado;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 2;
+  background-color: rgba($verde, .7);
+  .traduccion{
+    margin-left: 20px;
+    font-weight: bold;
+    color: #A7E83F;
+    text-shadow: 0px 0px 8px black;
+    &:hover{
+      color: #3dd7c5;
+    }
+  }
+  figure img {
+    height: 12vh;
+  }
+  .home{
+    display: none;
+  }
+}
+
+// =====  menú sólido  =====
+.menu_solido{
+  transition: 1s;
+  background-color: $verde !important;
+  height: 60px;
+  figure img {
+    height: 50px;
+  }
+  .home_block{
+    display: block;
+  }
+}
+.item_encabezado:nth-of-type(2){
+  width: 50vw;
+}
+
+.item_encabezado:nth-of-type(1),
+.item_encabezado:nth-of-type(3){
+  // border: 1px solid red;
+  // width: 25vw;
+}
+
+
+
+
+.data-sticky{
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 3px 3 5px #535555;
+  // background-color: $cielo
+  z-index: 100;
+}
+
+
+#menu-central{
+  padding: 13px 0 13px 0;
+  border: 0;
+  a{
+    color: white;
+    text-transform: uppercase;
+    transition: all .3s ease-in;
+    &:hover{
+      color: $amarillo;
+    }
+  }
+}
+.menu li a{
+  // font-family: "Antonio Bold";
+  font-size: 16px !important;
+  letter-spacing: .5px;
+}
+
+// ==== Menú desplegable ==== 
+.sub-menu-central{
+  background: $verde;
+  text-align: left;
+  li a{
+    letter-spacing: 0.8px;
+    font-size: 14px !important;
+  }
+}
+
+
+
+.is-dropdown-submenu {
+  border: 0px;
+}
+// .dropdown ul li a{
+//   border-bottom: 0;
+//   &:hover{
+//       border-bottom: 1px solid $rojo;
+//   }
+// }
+
+.dropdown.menu > li.is-dropdown-submenu-parent > a::after{
+  border-color: $cielo transparent transparent;
+  transition: .5s;
+}
+.dropdown.menu > li.is-dropdown-submenu-parent:hover > a::after{
+  border-color: $amarillo transparent transparent;
+}
+
+.menu_sede a img{
+  height: 160px;
+}
+
+#top{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.logo_principal{
+  height: 120px;
+}
+.item_top:nth-of-type(2){
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#link_home>a{
+  padding: 0;
+}

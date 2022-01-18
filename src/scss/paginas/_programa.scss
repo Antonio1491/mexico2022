@@ -1,0 +1,265 @@
+.actividad > img{
+    height: 30px;
+}
+
+#contenido_programa
+{
+  // border: 2px solid red;
+}
+// /=============================   Programa Completo   ==========================
+.dia_titulo{
+  text-transform: uppercase;
+  margin-top: 60px;
+  text-align: center;
+  a{
+    border: 3px solid $verde;
+    border-radius: 20px;
+    padding: 5px 40px;
+    pointer-events: none;
+    cursor: default;
+    font-family: $fuenteTitulo1;
+  }
+  h4, a{
+    color: $colorPrincipal ;
+    font-size: 30px;
+  }
+  h4{
+    font-family: $fuenteTitulo2;
+    margin-top: 10px;
+    margin-bottom: -5px;
+  }
+  h5{
+   color: $azul;
+   font-size: 20px;
+   font-family: $fuenteResaltado;
+   margin-top: 10px;
+   text-transform: initial;
+ }
+}
+
+.actividad{
+  margin-bottom: 7px;
+  box-shadow: 0px 0px 3px #b8b8b8;
+  
+  header{
+    padding: 10px 5% 0 0;
+    transition: all .5s ease;
+    cursor: pointer;
+  }
+  section{
+    padding-bottom: 5px;
+  }
+  section,
+  header{
+    background: white;
+  }
+  img{
+    height: 55px;
+  }
+  .tituloActividad h6{
+    color: $colorPrincipal;
+    font-family: $fuenteResaltado;
+  }
+  .contieneBloque{
+    cursor: pointer;
+  }
+  .centrado_vertical{
+    justify-content: center;
+  }
+}
+
+.actividad > div{
+  display: flex;
+  align-items: center;
+}
+
+.horario{
+  margin: 0 auto;
+}
+
+.resumen{
+  font-size: 12.5px;
+  margin: 0 20px 0 20%;
+}
+.resumen small,
+.resumen_conf small{
+  color: $verde;
+  font-size: 13px;
+}
+article.actividad header{
+  display: grid;
+  grid-template: 35px / 20% 80%;
+}
+
+
+
+.actividad header:hover,
+.actividad:active{
+  background: $colorPrincipal;
+  color: white;
+  box-shadow: 0 0 10px #b8b8b8;
+  transform: scale(1.05)
+}
+
+.actividad header:hover .hora > i,
+.actividad header:hover h6{
+  color: white;
+}
+
+.actividad header div:nth-of-type(1){
+  grid-row: 1 / 2 span;
+  text-align: center;
+}
+.actividad header div:nth-of-type(2){
+  border-bottom: .5px solid $verde;
+  margin-bottom: 3px;
+  &:hover{
+    border-bottom: .5px solid white;
+  }
+}
+.actividad header div:nth-of-type(3),
+.actividad header div:nth-of-type(2){
+  text-align: left;
+  padding-left: 20px;
+}
+.actividad .conferencia:nth-of-type(1){
+  margin-top: 0px;
+}
+
+
+.hora > i{
+  color: $azul;
+}
+.lugar{
+  color: $verde;
+  text-align: center;
+  justify-content: center;
+}
+.lugar > i{
+  font-size: 13px;
+}
+.lugar > span{
+  font-size: 10px;
+}
+
+.conferencia{
+  display: grid;
+  grid-template-columns: 24% 76%;
+  grid-auto-rows: auto;
+  padding: 6px 0px -5px 0px;
+  margin: 5px 0px;
+  align-items: center;
+}
+.conferencia:hover{
+  cursor: pointer;
+// .conferencia:hover .lugar,
+// .conferencia:hover .titulo
+//   color: white
+//   background: $verde
+}
+.conferencia div > .titulo a,
+.lista_talleres ul li a,
+.conferencia div > .titulo,
+.lista_talleres ul li{
+  color: #009f54;
+  font-size: 13px;
+  font-family: "avenir bold";
+  line-height: 1.8em;
+  list-style: none;
+}
+.lista_talleres ul li::before{
+  content: " - ";
+  color: #009f54;
+}
+.conferencia div > .titulo{
+  padding-right: 35px;
+  margin-bottom: 4px;
+    // padding-bottom: 5px
+  }
+.lista_talleres ul li{
+  padding: 0 25px 0 20%;
+  list-style: none;
+}
+.emergente h4{
+  color: $amarillo;
+  font-family: "avenir bold";
+  border-bottom: 1px solid #dbdbda;
+}
+.emergente img{
+  height: 130px;
+}
+.emergente p{
+  color: $colorPrincipal;
+  text-align: justify;
+}
+.emergente small{
+  margin-left: 25px;
+  color: #009f54;
+  font-weight: bold;
+}
+.datosConferencia > p{
+  font-size: 13px;
+  padding-right: 30px;
+}
+.datosConferencia > hr{
+  color: $verde;
+  width: 90%;
+  // margin: 0
+  align-items: center;
+}
+
+.imparten{
+  display: grid;
+  grid-template-columns: 50px auto;
+  // margin-bottom: 5px;
+}
+.imparten span{
+  font-size: 12px;
+  color: $verde;
+  font-family: "avenir bold";
+  padding-left: 10px;
+}
+.imparten img{
+  height: 45px;
+}
+.imparten p{
+  font-size: 12px;
+  text-align: left;
+  padding: 0 10px 0 10px;
+  margin-bottom: 0;
+}
+.imparten a span:hover{
+  color: $verde;
+}
+.actividad section{
+  display: none;
+}
+section .datosConferencia{
+  display: none;
+}
+
+.contieneBloque h6::before{
+  content: url(../img/down-arrow3.png);
+  margin-right: 3px;
+  position: absolute;
+  margin-left: -22px;
+}
+.conferencia .titulo::before{
+  content: url(../img/down-arrow3.png);
+  margin-right: 3px;
+  position: absolute;
+  margin-left: -20px;
+  padding-top: 5px;
+}
+
+.actividad:hover .contieneBloque h6::before{
+  content: url(../img/down-arrow2.png);
+  margin-right: 3px;
+}
+
+.noDisponible{
+  color: #941c1c;
+}
+.disponible{
+  color: #006868;
+}

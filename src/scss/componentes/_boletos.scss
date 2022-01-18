@@ -1,0 +1,124 @@
+#boletos_contenedor{
+  padding-top: 2rem;
+  background-color: $colorPrincipal;
+  padding-bottom: 4rem;
+}
+.contenedor-boleto{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 2rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 3rem;
+  column-gap: 4rem;
+  flex-direction: row;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.boleto:hover{
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px $verde;
+}
+.boleto{
+  background-color: white;
+  border-radius: 30px;
+  width: 260px;
+  padding-bottom: 15px;
+  transition: .5s;
+  box-shadow: 0px 0px 10px #1a1919;
+  position: relative;
+  min-height: 480px;
+  
+}
+.wave{
+  position: relative;
+  margin-top: -1px;
+}
+.boleto__titulo{
+    background-color: $verde;
+    border-radius: 30px 30px 0px 0px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: $fuenteTitulo1;
+    letter-spacing: 1px;
+}
+.boleto__precio{
+  text-align: center;
+  font-size: 35px;
+  color:$verde;
+  font-family: $fuenteResaltado;
+  
+}
+.boleto__precio p{
+ font-weight: 700;
+ margin-bottom: 0px;
+ margin-top: -10px;
+}
+.boleto__precio p SPAN{
+  font-size: 20PX;
+}
+.boleto__precio h6{
+  font-size: 18px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  
+}
+.boleto__btn{
+  display: flex;
+  justify-content: center;
+}
+.btn__comprar{
+  position: absolute;
+  padding: 10px 40px;
+  border-radius: 10px;
+  text-decoration: none;
+  color:$verde;
+  font-weight: 700;
+  transition: .3s;
+  border: 2px solid $verde;
+  bottom: 15px;
+  letter-spacing: 1px;
+}
+.btn__comprar:hover, .btn__comprar:active{
+  color: white;
+  background-color: $verde;
+}
+
+
+
+.boleto__descripcion{
+  padding: 0px 20px 10px;
+  
+}
+.boleto__descripcion p{
+  text-align: center;
+  margin-bottom: 0;
+  color: $azul;
+
+}
+.boleto__descripcion ul{
+  font-size: 14px;
+  margin: 0;
+  padding: 0 20px;
+}
+
+.contenido_precios ul li {
+  color: $blanco;
+}
+.contenido_precios{
+  h3{
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+}
+.nota_boletos{
+  margin-top: 50px;
+  color: $verde;
+  font-size: 13px;
+}
