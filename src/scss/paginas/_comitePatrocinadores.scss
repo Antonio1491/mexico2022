@@ -38,7 +38,7 @@
     }
   }
   h4{
-    @include subtitulo($blanco, $azul);
+    @include subtitulo($azul);
   }
   .descripcion_principal{
     margin-top: 2rem;

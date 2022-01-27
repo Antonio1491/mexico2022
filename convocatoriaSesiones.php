@@ -6,185 +6,192 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:url"                content="http://congresoparques.com/convocatoriaSesionesEducativas.php" />
-    <meta property="og:type"               content="website" />
-    <meta property="og:title"              content="Convocatoria 2020 - Sesiones Educativas" />
-    <meta property="og:description"        content="La convocatoria tiene como objetivo recibir proyectos que quieran ser presentados en el Congreso Internacional de Parques Urbanos 2020." />
-    <meta property="og:image"              content="http://congresoparques.com/img/fb_convocatoria.jpg" />
-    <title>World PArks Congress 2022 | </title>
+    <title>World Urban Parks Congress 2022 | CALL FOR ABSTRACT</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="/js/js.js"></script>
     <?php  
-    require "inc/funciones.php";
+    require "inc/app.php";
     incluirTemplate("head");
     ?>
+    
+    
   </head>
 <body>
   <header class="header h_convocatoria">
   <div class="hide-for-small-only">
     <?php 
-    incluirTemplate("menu"); 
+    // incluirTemplate("menu"); 
     ?>
     </div>
     <div class="titulo_pagina">
-      <figure class="">
-        <img src="../img/iconos/sudamerica/i_sesiones.png" alt="">
+      <figure class="" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+        <img src="img/sesion.png" alt="">
       </figure>
-      <hgroup>
-        <h2>CONVOCATORIA CERRADA</h2>
-        <h1>"Sesiones Educativas 2020"</h1>
+      <hgroup data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+        <h2>CALL FOR ABSTRACTS</h2>
+        <h1>WORLD CONGRESS 2022</h1>
       </hgroup>
+      <div class="row align-center">
+      <a href="./registration/" id="linkRegistroSesion" class="btn btn__principal" target="_blank">
+      register proposal
+      </a>
+    </div>
     </div>
   </header>
   <main id="convocatoria_sesiones">
-    <div class="row column small-12 text-center ">
-      <figure class="ejes_convocatoria">
-        <img src="../img/iconos/sudamerica/i_temas_h.png" alt="Ejes Temáticos 2020">
-      </figure>
+    <div class="row column small-12 text-center seccion">
+      <!-- <figure class="ejes_convocatoria">
+        <img src="" alt="Ejes Temáticos 2020">
+      </figure> -->
     </div>
     <div class="row">
       <div class="column medium-6 small-12">
-        <p class="text-justify">La convocatoria para sesiones educativas tiene como objetivo recibir 
-        información sobre proyectos alrededor de todo el mundo que quieran ser 
-        presentados en el Congreso Internacional de Parques Urbanos Sudamérica 
-        en su segunda edición en Guayaquil, Ecuador.</p>
+        <p class="text-justify">The call for abstracts aims to receive information on projects around the world that want to be presented at the World Congress of Urban Parks.</p>
       </div>
       <div class="column medium-6 small-12">
-        <p  class="text-justify">Las propuestas recibidas con más probabilidad de ser aceptadas para formar parte
-          del programa son, aquellas que se apeguen a nuestras 
+        <p  class="text-justify">The proposals received with the greatest probability of being accepted to be part of the program are those that adhere to our theme and tracks.
           <strong class="link_especial"> 7 temáticas.</strong></p>
       </div>
     </div>
     <div class="row">
       <div class="column medium-6 small-12">
-        <h4 class="subtitulo">Perfil del ponente</h4>
-        <ul class="lista_vineta">
-          <li><span>Arquitectos, urbanistas, arquitectos paisajistas, diseñadores del hábitat. </span></li>
-          <li><span>Sociólogos, antropólogos, mercadólogos y administradores.</span></li>
-          <li><span>Funcionarios públicos de los tres niveles de gobierno.</span></li>
-          <li><span>Ambientalistas, grupos de la sociedad civil organizada.</span></li>
-          <li><span>Cualquier otra persona interesada en compartir sus conocimientos y proyectos sobre el espacio público con los asistentes.</span></li>
+        <h4 class="subtituloV">Speaker Profile</h4>
+        <ul class="listaVinetas">
+          <li><span>Architects, urban planners, landscape architects, habitat designers.</span></li>
+          <li><span>Sociologists, anthropologists, marketers, and administrators.</span></li>
+          <li><span>Public officials of the three levels of government.</span></li>
+          <li><span>Environmentalists, associations, and nonprofit organizations.</span></li>
+          <li><span>Any other person interested in sharing their knowledge and projects on public space with the attendees.</span></li>
         </ul>
       </div>
       <div class="column medium-6 foto_perfil">
         <figure class="">
-          <img src="../img/iconos/sudamerica/i_perfil.png" alt="">
+          <img src="img/perfil1.png" alt="">
+        </figure>
+        <figure class="">
+          <img src="img/perfil2.png" alt="">
         </figure>
       </div>
     </div>
 <br>
     <div class="row fecha_convocatoria align-center">
-      <h4 class="subtitulo">Elecciones y fechas</h4>
+      <h4 class="subtituloV">Important dates</h4>
     </div>
     <div class="row elecciones_fechas text-center">
       <div class="column medium-6 small-12 ">
-        <h5>Límite para enviar propuestas</h5>
-        <span>29 de marzo del 2020</span>
+        <h5>Limit to send proposals</h5>
+        <span>March 31st, 2022 at 11:59 (GMT-6)</span>
       </div>
       <div class="column medium-6 small-12">
-        <h5>Comunicación de resultados</h5>
-        <span>29 de abril del 2020</span>
+        <h5>Communication of results</h5>
+        <span>May 2022</span>
       </div>
     </div>
   <br><br>
     <div class="row consideraciones">
-      <div class="column medium-10 small-12">
-        <h4 class="subtitulo">Consideraciones generales</h4>
-        <p  class="text-justify">Si la propuesta es aceptada, cuando se le indique, el ponente deberá de frirmar
-          los acuerdos, términos y condiciones de privacidad, compartir su presentación
-          (material visual de apoyo), ya que ese material se hará público en la plataforma 
-          web posterior a las fechas del congreso.</p>
-        <p  class="text-justify">Las sesiones educativas en sus dos modalidades tienen una duración de 25 y 40 
-        minutos. Parques de México se reserva el derecho de designar el tiempo de intervención 
-        de las propuestas seleccionadas. Se podría o no, compartir el espacio de la sesión 
-        educativa con algún otro ponente haciendo que los tiempos de intervención puedan 
-        fluctuar. </p>
-        </ul>
+      <div class="column medium-12 small-12">
+        <h4 class="subtituloV">Call for Presentation Specifics</h4>
+        <ol class="listaVinetas">
+          <li><span>
+          If the proposal is accepted, when indicated, the speaker must sign the privacy agreements, terms and conditions, share their presentation (visual support material), since this material will be made public on the web platform of the National Association of Parks and Recreation of Mexico and the World Urban Parks after the dates of the congress.</span>
+          </li>
+          <li><span>
+          The National Association of Parks and Recreation of Mexico and the World Urban Parks reserve the right to designate the time of intervention of the selected proposals.</span>
+          </li>
+          <li><span>
+          We encourage the distribution of this Call for Presentations.</span>
+          </li>
+          <li><span>
+          The Congress Content Committee reserves the right to make final presentation selections and edit descriptions and speaker biographies.</span>
+          </li>
+          <li><span>
+          By submitting a proposal for consideration, it is understood that you are committed to be present and to participate as proposed, if accepted.</span>
+          </li>
+          <li><span>
+          Additional information on presentation logistics and conference details will be forwarded to all successful applicants.</span>
+          </li>
+          <li><span>
+          The purpose of the session type, size, format, and audience selection questions is to ensure a diversity of session topics and styles. We will endeavor to accommodate your preferences for style and audience size. However, due to the format of this congress, no guarantee can be given as to the level of attendance at any session.</span>
+          </li>
+        </ol>
       </div>
     </div>
-    <div class="beneficios cinta_azul">
+    <div class="beneficios bgPrincipal seccion">
       <div class="row">
         <div class="column medium-6 small-12 align-self-middle">
-          <figure>
-            <img src="../img/iconos/sudamerica/i_beneficios.png" alt="">
-          </figure>
+          <div class="imgBeneficios">
+            <img src="img/curricular.png" alt="" >
+            <img src="img/expo.png" alt="" >
+            <img src="img/magistral.png" alt="">
+            <img src="img/sesion.png" alt="">
+            <img src="img/social.png" alt="">
+            <img src="img/vivencial.png" alt="">
+          </div>
         </div>
         <div class="column medium-6 small-12">
-          <h4 class="subtitulo_bc">Beneficios</h4>
-          <p  class="text-justify">A los ponentes seleccionados se les otorgará una entrada general 
-          de cortesía para los días del evento. La entrada de cortesía incluye:</p>
-          <ul>
-            <li>Todas las conferencias magistrales y sesiones educativas.</li>
-            <li>Entrada a la muestra comercial “Expo Parques”.</li>
-            <li>Eventos sociales.</li>
-            <!-- <li><strong><a href="eventosSociales.php" class="link">Eventos sociales.</a></strong></li> -->
+          <h4 class="subtituloV">Benefits</h4>
+          <p  class="text-justify">The selected speakers will be granted a courtesy ticket for the days of the congress. The courtesy ticket includes:</p>
+          <ul class="listaVinetas">
+            <li><span>Diploma of participation as a speaker.</spa></li>
+            <li><span>All keynotes and sessions.</spa></li>
+            <li><span>Entrance to the commercial exhibition “Expo Parques”.</spa></li>
+            <li><span>Social events.</span></li>
           </ul>
-          <p class="nota text-justify"><strong >Nota:</strong> Los gastos relacionados con 
-          inscripción a talleres, traslado, hospedaje, comidas y honorarios por 
-          presentación de la sesión no están incluidos en el paquete de beneficios.</p>
+          <p class="text-justify"><strong >Note:</strong> Expenses related to registration for workshops, transportation, lodging, meals, and speaker fees are not included in the courtesy ticket.</p>
         </div>
       </div>
     </div>
 
-
-    <div class="row column">
-      <h4 class="subtitulo">Instrucciones</h4><br>
+    <div class="row align-center">
+      <h4 class="subtituloV">Instructions</h4>
     </div>
     <div class="row instrucciones">
-      <div class="column small-12 medium-4">
-        <figure>
-          <img src="../img/iconos/sudamerica/i_formulario.png" alt="">
+      <div class="column small-12 medium-4 ">
+        <figure class="text-center" >
+          <img src="img/formulario.png" alt="" >
         </figure>
-        <h4 class="paso1">LLENA EL FORMULARIO</h4>
-        <p>Si tu propuesta es una “Mesa panel”, 
-        es importante registrar a todas las personas. Máximo 2 personas.</p>
+        <h4>FILL OUT THE FORM</h4>
+        <p>If your proposal includes another speaker, it is important to register all speakers.</p>
       </div>
-      <div class="column small-12 medium-4">
-        <figure>
-          <img src="../img/iconos/sudamerica/i_mail.png" alt="">
+      <div class="column small-12 medium-4 align-center">
+        <figure class="text-center">
+          <img src="img/enviar.png" alt="" >
         </figure>
-        <h4 class="paso2">ENVÍA TU PROPUESTA</h4>
-        <p>El envío de la propuesta no garantiza tu aceptación, ni tu registro 
-        como asistente del congreso.</p>
+        <h4>SUBMIT YOUR ABSTRACT</h4>
+        <p>Sending the abstract does not guarantee your acceptance, nor your registration as a congress attendee.</p>
       </div>
-      <div class="column small-12 medium-4">
-        <figure>
-          <img src="../img/iconos/sudamerica/i_calendario.png" alt="">
+      <div class="column small-12 medium-4 text-center">
+        <figure class="text-center">
+          <img src="img/calendario.png" alt="" >
         </figure>
-        <h4 class="paso1">ESPERA LOS RESULTADOS</h4>
-        <p>Recibirás los resultados de la convocatoria en las fechas establecidas.</p>
+        <h4>WAIT FOR THE RESULTS</h4>
+        <p>You will receive the results of the call on the established dates.</p>
       </div>
     </div><br><br>
     <div class="row column">
-      <h4 class="subtitulo">Sobre la sesión:</h4>
+      <h4 class="subtituloV">Type of session:</h4>
     </div>
     <div class="row sobre_sesion">
-      <div class="column small-12 medium-6"><br>
-        <span>Título:</span>
-        <p  class="text-justify">Debes crear un título que refleje la esencia de tu sesión y 
-        deberá ser de 12 palabras o menos.</p>
-        <p><span>Seleccionar la <strong class="link_especial">temática</strong>
-         a la que se alinea.</span></p>
-        <p  class="text-justify"><span>Descripción:</span>
-        Describe de forma concisa y clara tu sesión; esta debe ser de 200 
-        palabras o menos. Si tu sesión es seleccionada, la descripción 
-        aparecerá en nuestra página web, asegúrate de que te invite a entrar a ella. </p>
-        <p class="text-justify"><span>Justificación:</span><br>
-        Justifica la importancia de tu sesión educativa propuesta, identificando 
-        cómo tu proyecto/iniciativa/investigación, da solución a un problema 
-        relacionado con el espacio público y cómo se relaciona con las siete 
-        temáticas del congreso. No hay limitaciones en el número de palabras.</br>
+      <div class="column small-12 medium-6">
+        <span>Session Title:</span>
+        <p  class="text-justify">You must create a title that reflects the essence of your session and must be 12 words or less.</p>
+        <p><span>Select the <strong class="link_especial">track</strong>
+         to which it is aligned.</span></p>
+        <span>Description: </span>
+        <p  class="text-justify">Concisely and clearly describe your session; This should be 200 words or less. If your session is selected, the description will appear on our website, make sure it is attractive and invite attendees to attend it.</p>
+        <span>Justification:</span>
+        <p class="text-justify">Justify the importance of your abstract, identifying how your project/initiative/research solves a problem related to public space and how it relates to the tracks of the congress. There are no limit in the number of words.</br>
       </div>
       <div class="column medium-6">
-        <p  class="text-justify"><span>Objetivos:</span><br>
-        La sesión debe contar con objetivos de aprendizaje, claros y medibles. Se 
-        solicita enumerar 3.</p>
-        <p  class="text-justify"><span>Modalidad:</span><br>
-        Podrás realizar una propuesta personal o en conjunto con otros 
-        participantes. Estos pueden ser colaboradores de su misma organización,
-        pero esto no es limitativo. Podrás hacer una propuesta de sesión con 
-        compañeros de proyectos sociales, despachos, universidades - ¡incluso de 
-        distintas ciudades o países! Es importante tener la información
-         personal de todos los ponentes involucrados en la propuesta 
-         con un máximo de 2 personas.</p>
+        <span>Goals:</span>
+        <p  class="text-justify">The session should have clear and measurable learning objectives. Please list 3.</p>
+        <span >Type of session:</span>
+        <p  class="text-justify">You can make a personal proposal or together with other participants. These can be collaborators of your same organization, but not limited to it. You will be able to make a session proposal with colleagues from social projects, offices, universities - even from different cities or countries! It is important to have the personal information of all the speakers involved in the proposal with a maximum of 2 people.</p>
       </div>
     </div>
     <!-- <div class="row column">
@@ -206,20 +213,18 @@
 
     </div> -->
     <div class="row align-center">
-      <!-- <a href="registros/sesionesEducativas" id="link_registro" class="btn_borde" target="_blank">
-        <h4 id="registraContribucion">¡Registra tu propuesta aquí!</h4>
-      </a> -->
-      <h4 class="cerrado">¡Convocatoria cerrada!</h4>
+      <a href="./registration" id="linkRegistroSesion" class="btn btn__principal" target="_blank">
+      register proposal
+      </a>
     </div>
 
-    <br><br>
-    <!-- <div class="row">
-      <figure>
-        <img src="img/convocatoria_cerrada.png" alt="">
-      </figure>
-    </div> -->
 </main>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
 <?php 
-incluirTemplate("footer");; 
+incluirTemplate("footer");
 ?>
 

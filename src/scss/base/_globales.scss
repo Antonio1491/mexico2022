@@ -1,12 +1,24 @@
 main{
   font-family: $fuenteContenido;
-  background-color: $cielo;
+  color: $gris;
+  // background-color: $cielo;
+}
+.bgPrincipal,
+.bgSecundario,
+.bgCielo{
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: $blanco;
+  .listaVinetas span{
+    color: $blanco;
+  }
 }
 .bgPrincipal{
   background-color: $colorPrincipal;
 }
 .bgSecundario{
   background-color: $azul;
+  color: $blanco;
 }
 .bgCielo{
   background-color: $cielo;
@@ -15,36 +27,6 @@ main{
 .seccion{
   padding-top: 40px;
   padding-bottom: 40px;
-}
-
-@font-face {
-  font-family: "Antonio Bold";
-  src : url("font/Antonio-Bold.ttf");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Antonio Regular";
-  src: url("font/Antonio-Regular.ttf");
-  font-display: swap;
-}
-
-@font-face{
-  font-family: "Avenir Black";
-  src: url("font/AvenirLTStd-Black.otf");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Avenir Book";
-  src: url("font/AvenirLTStd-Book.otf");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Avenir Heavy";
-  src: url("font/AvenirLTStd-Heavy.otf");
-  font-display: swap;
 }
 
 // ===========   WUP  fonts   ============
@@ -70,7 +52,7 @@ main{
 }
 @font-face {
   font-family: "Arial Medium";
-  src: url("fonts/ArialMdn.ttf");
+  src: url("fonts/ArialMdm.ttf");
   font-display: swap;
 }
 
@@ -87,9 +69,33 @@ main{
 }
 
 
-.subtituloB{
-  @include subtitulo($colorPrincipal, $blanco);
+.subtitulo{
+  @include subtitulo($colorPrincipal);
 }
+.subtituloV{
+  @include subtitulo($verde);
+}
+
+.contenidoFondo{
+  background-color: $colorPrincipal;
+  color: $blanco;
+  display: block;
+  font-family: $fuenteMedium;
+  letter-spacing: 1px;
+  padding-left: 4px;
+}
+
+// Lista con viñetas verdes
+ul.listaVinetas, 
+ol.listaVinetas{
+  li{
+    color : $verde;
+    span{
+      color : $gris;
+    }
+  }
+}
+
 
 
 .fotos_ciudades{
@@ -105,3 +111,11 @@ main{
 .img-medium{
   height: 150px;
 }
+
+  //filtro 
+.filtro{
+  filter: brightness(50%) saturate(105%);
+  -webkit-filter: brightness(50%) saturate(105%);
+  -moz-filter: brightness(50%) saturate(105%);
+}
+  

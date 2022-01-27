@@ -1,14 +1,20 @@
 <!DOCTYPE html>
-<html lang="es" dir="ltr">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Call for Abstracts | 2021 World Congress</title>
-    <link rel="stylesheet" href="./../css/foundation.min.css" >
+    <title>Call for Abstracts | 2022 World Congress</title>
+    <link rel="stylesheet" href="../css/foundation.min.css" >
     <link rel="stylesheet" href="./../css/app.css">
     <?php
-    require("./../class/clases.php");
+    require '../inc/app.php';
+    
+    use App\Tema;
+
+    $temas = Tema::all();
+
+    // debuguear($temas);
     // include ('class/classRegistroPropuesta.php');
     ?>
   </head>
@@ -17,27 +23,27 @@
       <div class="logotipo-registro">
         <a href="https://congresoparques.com/">
           <figure>
-            <img src="./../img/wup_logotipo.png" alt="">
+            <img src="./../img/logo_wup_b.png" alt="">
           </figure>
         </a>
       </div>
       <div class="header-registro__titulo">
-        <h1 class="">2021 World Congress - Call for Abstracts</h1>
+        <h1 class="">2022 World Congress - Call for Abstracts</h1>
       </div>
     </header>
     <section class="container row">
-      <div class="column small-12 instrucciones ">
-        <p class="text-center"><strong>2021 World Congress - Call for Abstracts</strong></p>
+      <div class="column small-12 infoAbstract">
+        <p class="text-center"><strong>2022 World Congress - Call for Abstracts</strong></p>
          <p>The call for presentations is OPEN! You can submit your abstract for consideration by the planning committee by completing the registration. You do not need to be a member to register, and we encourage everyone to submit a topical abstract to the Congress theme. Thank you!</p>
          <p>*Registration is for Abstract Submissions Only. </p>
-         <p><strong>The World Congress 2021 will be December 5 - 10, 2021. This Congress will explore the following themes:</strong></p>
+         <p><strong>The World Congress 2022 will be December 5 - 10, 2022. This Congress will explore the following themes:</strong></p>
           <ul>
             <li>What is the legacy of park leaders - How will an all-inclusive leadership shape the legacy and grow emerging leaders?</li>
             <li>Can we learn from the past and enable the future?</li>
             <li>Who’s vision - are our Parks for All - How will all-inclusive and participatory park advocates ensure equity, access to parks, and health and wellness benefits for all?</li>
           </ul>
           <p>What will be our legacy for cities and communities?</p>
-          <p>Park leaders are not alone, and the 2021 World Congress will bring together professionals from all over the world to develop a new vision for the future.</p>
+          <p>Park leaders are not alone, and the 2022 World Congress will bring together professionals from all over the world to develop a new vision for the future.</p>
           <ol class="listaTemas">
             <li>We encourage the distribution of this Call for Abstracts.</li>
             <li>For each individual proposal, the registration form must be completed in full and submitted. </li>
@@ -50,7 +56,7 @@
             <li>The Planning Committee may choose more than one abstract from a single speaker. This will be decided on a case-by-case basis given the number of speaking opportunities available. </li>
             <li>We reserve the right to edit submissions for publication purposes. All content will be subject to use in the development of congress proceedings. </li>
             <li>The purpose of the session type, size, format, and audience selection questions is to ensure a diversity of session topics and styles. We will endeavor to accommodate your preferences for style and audience size. However, due to the format of this congress, no guarantee can be given as to the level of attendance at any session. </li>
-            <li>Information submitted under this call for presentations is protected by World Urban Parks Privacy Policy. Information collected will be used by the World Congress 2021 Planning Committee for the determination of successful presenters and to assist in the marketing of the World Parks Congress.</li>
+            <li>Information submitted under this call for presentations is protected by World Urban Parks Privacy Policy. Information collected will be used by the World Congress 2022 Planning Committee for the determination of successful presenters and to assist in the marketing of the World Parks Congress.</li>
           </ol>
           <!-- <p>Si tienes dudas o inconvenientes para llenar este formulario, comunícate 
           con <strong>Vitoria Martín</strong>, Coordinadora de Contenido y Educación 
@@ -147,25 +153,20 @@
             <input type="text" name="Sesion" value="" required>
           </div>
           <div class="row ">
-            <div class="column medium-6 small-12">
+           <div class="column medium-6 small-12">
               <label for="">Session Type: </label>
-              <select class="" name="tipoSesion">
+              <select class="" name="tipoSesion"> 
               <?php
-              
-              $tipoConferencia = new Propuesta();
-              $array_tipos = $tipoConferencia->getTipoConferencia();
-
-                foreach ($array_tipos as $valor) {
-                echo "<option value='".$valor['id_tipo']."'>".$valor['tipo']."</option>";
-                }
-              ?>
+              foreach($temas as $tema):  ?>
+                <option value="<?php echo $tema->tema ?>"><?php echo $tema->tema ?></option>";
+                <?php endforeach ?>
             </select>
-            </div>
+            </div> 
             <div class="column medium-6 small-12">
               <label for="">Preferred session type:: </label>
               <select class="" name="modalidadSesion">
                 <option value="Live">Live</option>
-                <option value="Mock-live">Mock-live</option>
+                <!-- <option value="Mock-live">Mock-live</option> -->
                 <option value="Recorded">Recorded</option>
               </select>
             </div>
@@ -174,12 +175,12 @@
             <label for="">What Congress subtheme would you like to be considered for? Streams of these subthemes will include general topics, young/emerging leaders, women in leadership, and leadership and equity. </label>
             <select name="subtema" id="">
             <?php
-              $subtema = new Propuesta();
-              $array_subtema = $subtema->getSubtemas();
+              // $subtema = new Propuesta();
+              // $array_subtema = $subtema->getSubtemas();
 
-                foreach ($array_subtema as $valor) {
-                echo "<option value='".$valor['id_subtema']."'>".$valor['subtema']."</option>";
-                }
+              //   foreach ($array_subtema as $valor) {
+              //   echo "<option value='".$valor['id_subtema']."'>".$valor['subtema']."</option>";
+              //   }
               ?>
             </select>
           </div>
@@ -208,7 +209,7 @@
           </div>
             
           <div class="text-center">
-          <input type="hidden" name="Evento" value="WPC2021">
+          <input type="hidden" name="Evento" value="WPC2022">
             <input type="submit" name="" value="Registration" class="button alert">
           </div>
         </form>
