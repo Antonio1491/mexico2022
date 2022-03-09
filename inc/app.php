@@ -7,10 +7,9 @@ require __DIR__ . '/../vendor/autoload.php';
 //conectar BD
 $conexion_db = conectarDB();
 
-use App\Tema;
+use App\ActiveRecord;
+ActiveRecord::setDB($conexion_db);
+// ActiveRecord::setDB($conexion_db);
 
 
-Tema::setDB($conexion_db);
-
-// var_dump(Tema::all());
 

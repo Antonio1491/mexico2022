@@ -2,10 +2,7 @@
 
 namespace App;
 
-class Tema{
-
-  //Base de Datos 
-  protected static $conexion_db;
+class Tema extends ActiveRecord{
 
   //mapear los datos
   protected static $columnasDB = ['id_tema', 'tema', 'tema_ing', 'descripcion', 'descripcion_ing', 'icono', 'id_congreso'];
@@ -17,11 +14,6 @@ class Tema{
   public $descripcion_ing;
   public $icono;
   public $id_congreso;
-
-  // Definir conexión a la bd
-  public static function setDB($database){
-    self::$conexion_db = $database;
-  }
 
   public function __construct($args = [])
   {

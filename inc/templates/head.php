@@ -1,16 +1,18 @@
-  <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-5K34TXX');</script>
-<!-- End Google Tag Manager -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RSZ8ZMN4QH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-RSZ8ZMN4QH');
+</script>
+<link rel="icon" type="image/png" href="img/favicon.png" />
 <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
 <link rel="dns-prefetch" href="https://fonts.gstatic.com/" />
 
 <link rel="icon" type="image/png" href="img/favicon.png" />
-<link rel="preload" href="css/foundation.min.css" as="style">
+<!-- <link rel="preload" href="css/foundation.min.css" as="style"> -->
 <link rel="preload" href="css/app.css" as="style">
 <link rel="stylesheet" href="css/foundation.min.css">
 <link rel="stylesheet" href="css/app.css">

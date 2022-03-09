@@ -33,8 +33,8 @@
       }
       h1{
         color: white;
-        font-size: 5.5rem;
-        line-height: 5.5rem;
+        font-size: 4.5rem;
+        line-height: 4.5rem;
         text-shadow: 5px 5px 15px #211f24;
         // font-family: $fuenteTitulo2;
         // font-weight: 700;
@@ -52,8 +52,8 @@
       }
       h2{
         color: white;
-        font-size: 2rem;
-        letter-spacing: 6.7px;
+        font-size: 1.8rem;
+        letter-spacing: 4px;
         margin-top: -10px;
         text-shadow: 3px 2px 5px #2e2c35;
         @media screen and(max-width: 800px) {
@@ -103,6 +103,9 @@
           font-size: 1.2rem;
         }
       }
+      a{
+        margin-top: 0px;
+      }
     }
   
 }
@@ -116,8 +119,15 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: rgba($color: #000000, $alpha: .6);
+  background-color: rgba($color: $colorPrincipal, $alpha: .6);
   height: 20vh;
+  img{
+    transition: ease 0.5s;
+    &:hover{
+      filter: drop-shadow(2px 4px 6px black);
+      transform: scale3d(1.5, 1.5, 1.5);
+    }
+  }
   @media screen and(max-width: 800px) {
     height: 8vh;
     width: auto;
@@ -127,7 +137,7 @@
     width: auto;
   }
   img{
-    height: 10vh;
+    height: 12vh;
     @media screen and(max-width: 800px) {
       height: 5vh;
       width: auto;
@@ -154,3 +164,10 @@
     font-size: 0.5rem;
   }
 }
+
+.contenedorTraductor{
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  z-index: 10;
+  }

@@ -5,7 +5,7 @@
       <p>El Congreso de Parques Urbanos Sudamérica es una experiencia única de aprendizaje que tiene como objetivo reunir y 
         capacitar a profesionales de la industria en un mismo lugar.</p> -->
       <a href="#">
-        <img src="./img/wup_logotipo_bc.png" alt="" class="footer__logotipo">
+        <img src="./img/logo_wup_b.png" alt="" class="footer__logotipo">
       </a>
     </div>
     <!-- <div class="column medium-4 hide-for-small-only enlaces_relevantes">
@@ -19,49 +19,57 @@
     
     <div class="column medium-4 footer__titulo"  >
       <hgroup>
-        <h3>2021 WORLD PARKS</h3>
+        <h3>2022 WORLD PARKS</h3>
         <h2> CONGRESS</h2>
         <!-- <h1>SUDAMÉRICA</h1> -->
-        <h4>5-10 December 2021</h4>
+        <h4>14-18 November 2022</h4>
         <!-- <h6>Presentado por la Asociación Nacional de Parques y Recreación Argentina.</h6> -->
       </hgroup>
     </div>
     <div class="column medium-4 hide-for-small-only redes">
       <!-- <h3 class="titulo_footer">Datos de <span>Contacto</Param></span></h3> -->
       <div class="redes">
-        <a href="https://www.facebook.com/worldurbanparks" target="_blank"><img src="img/i_facebook.png" alt=""></a>
-        <a href="https://twitter.com/WUParks" target="_blank"><img src="img/i_twitter.png" alt=""></a>
-        <a href="https://www.instagram.com/wurbanparks/" target="_blank"><img src="img/i_instagram.png" alt=""></a>
-        <!-- <a href="https://www.youtube.com/channel/UC_ExzrmxP5er7qZHeVpWidQ" target="_blank"><img src="img/i_youtube.png" alt=""></a> -->
+        <a href="https://www.facebook.com/worldurbanparks" target="_blank">
+          <img src="img/icon-facebook.png" alt="">
+        </a>
+        <a href="https://twitter.com/WUParks" target="_blank">
+          <img src="img/icon-twitter.png" alt="">
+        </a>
+        <!-- <a href="https://www.instagram.com/wurbanparks/" target="_blank">
+          <img src="img/i_instagram.png" alt="">
+        </a> -->
+        <a href="https://www.youtube.com/channel/UC_ExzrmxP5er7qZHeVpWidQ" target="_blank">
+          <img src="img/icon-youtube.png" alt="">
+        </a>
       </div>      
       <p class="text-center">
-       Tel. +1 780 644 69761 <br> office@worldurbanparks.org
+       Tel. +1 780 644 69761 <br> office@worldurbanparks.org <br>latam@worldurbanparks.org
       </p>
     </div>
   </div>
   <div class="row footer_derechos">
-    <p>All rights reserved World Parks Congress</p>
+    <p>All rights reserved World Urban Parks Congress</p>
   </div>
 </footer>
+<!-- <a id="app-messenger" target="_blank" href="https://m.me/ANPRMexico">
+  <img src="img/messenger.png" alt="">
+</a> -->
 
-<script src="https://code.jquery.com/jquery-1.11.1.min.js" ></script>
-<script src="js/lightbox.js" defer></script>
+<!-- <script src="js/lightbox.js" defer></script> -->
 <!-- jquery cdn -->
-
 <!-- cdn librería slick (slider patrocinadores) -->
-<script src="js/vendor/foundation.js"></script>
-<script src="js/vendor/jquery.animateNumber.js" defer></script>
-<script src="js/js.js" defer></script>
-<script src="js/OcultaryVisualizar.js" defer></script>
+<!-- <script src="js/vendor/jquery.animateNumber.js" defer></script> -->
+<!-- <script src="js/js.js" defer></script> -->
+<!-- <script src="js/OcultaryVisualizar.js" defer></script> -->
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script> -->
 <script src="js/vendor/what-input.js"></script>
 <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" ></script>
 <!-- Inicialización de foundation -->
 <script>
-        ;(function() {
-            // Initialize
-            var bLazy = new Blazy();
-        })();
+        // (function() {
+        //     // Initialize
+        //     var bLazy = new Blazy();
+        // })();
     </script>
 <script type="text/javascript">
 $(document).foundation()
@@ -129,10 +137,10 @@ $(document).ready(function(){
 
 
 <script type="text/javascript">
- lightbox.option({
-      'resizeDuration': 200,
-      'wrapAround': true
-    })
+//  lightbox.option({
+//       'resizeDuration': 200,
+//       'wrapAround': true
+//     })
     
 $('.slider').slick({
 slidesToShow: 4,
@@ -149,33 +157,39 @@ autoplaySpeed: 2000,
 });
 
 </script>
-<!-- contador -->
+
+
+ <!-- Load Facebook SDK for JavaScript -->
+ <div id="fb-root"></div>
+        <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v8.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your Chat Plugin code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="402312013434241"
+  logged_in_greeting="Hola!, pueden apoyarme?"
+  logged_out_greeting="Hola!, pueden apoyarme?">
+      </div>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js" ></script>
+<script src="js/vendor/foundation.js"></script>
+<!-- traductor -->
 <script type="text/javascript">
-  function countdown(id){
-    var fecha=new Date('<?=$_SESSION['ano']?>','<?=$_SESSION['mes']?>','<?=$_SESSION['dia']?>','<?=$_SESSION['hora']?>','<?=$_SESSION['minuto']?>','<?=$_SESSION['segundo']?>')
-    var hoy=new Date()
-    var dias=0
-    var horas=0
-    var minutos=0
-    var segundos=0
-      if (fecha>hoy){
-          var diferencia=(fecha.getTime()-hoy.getTime())/1000
-          dias=Math.floor(diferencia/86400)
-          diferencia=diferencia-(86400*dias)
-          horas=Math.floor(diferencia/3600)
-          diferencia=diferencia-(3600*horas)
-          minutos=Math.floor(diferencia/60)
-          diferencia=diferencia-(60*minutos)
-          segundos=Math.floor(diferencia)
-          document.getElementById("contador").innerHTML='<span class="faltan">MISSING </span><span class="num_dias">' + dias + ' DAYS </span>'  + horas + ':' + minutos + ':' + segundos
-                    if (dias>0 || horas>0 || minutos>0 || segundos>0){
-                            setTimeout("countdown(\"" + id + "\")",1000)
-                    }
-            }
-            else{
-                    document.getElementById('restante').innerHTML='Quedan ' + dias + ' D&iacute;as, ' + horas + ' Horas, ' + minutos + ' Minutos, ' + segundos + ' Segundos'
-            }
-        }
-</script>
-
-
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+  }
+  </script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>

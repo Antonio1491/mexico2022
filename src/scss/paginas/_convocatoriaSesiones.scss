@@ -55,12 +55,22 @@
   grid-template-columns: repeat(3, 100px);
   grid-template-rows: auto;
   gap: 25px;
+  figure{
+    transition: 1s;
+    figcaption{
+      display: none;
+    }
+    &:hover figcaption{
+      display: block;
+      font-size: 10px;
+    }
+  }
   img{
     width: 100px;
-    transition: 1s;
+    transition: 0.3s;
     border-radius: 50%;
     &:hover{
-      box-shadow: #cddc0b 2px 4px 8px 0px;
+      box-shadow: $azul 2px 4px 8px 0px;
       transform: translateY(-10px);
     }
   }
@@ -78,16 +88,18 @@
 
 //Instrucciones formulario
 .infoAbstract {
-  background-color: $cielo;
+  background-color: rgba($cielo, 0.6);
   padding: 20px;
   text-align: justify;
   font-size: 14px;
   color: $gris;
   height: auto;
+  border-radius: 15px;
 
   strong{
     color: $colorPrincipal;
   }
+  
 }
 .formPropuestas{
   .encabezado {
@@ -101,5 +113,12 @@
   }
   .avatar{
     height: 60px;
+  }
+}
+.reveal{
+  padding: 40px !important;
+  text-align: justify;
+  h4{
+    color: $colorPrincipal;
   }
 }

@@ -1,13 +1,13 @@
 <?php
 
 DEFINE ('DB_USUARIO', 'root');
-  // DEFINE ('DB_USUARIO', 'u951310947_agg');
+  // DEFINE ('DB_USUARIO', 'u506969443_it');
 
 DEFINE('DB_CONTRASENA', '');
-// DEFINE('DB_CONTRASENA', 'Informatica14');
+// DEFINE('DB_CONTRASENA', 'Wup2022*');
 
-DEFINE ('DB_NOMBRE', 'congresos');
-// DEFINE ('DB_NOMBRE', 'u951310947_wpc');
+DEFINE ('DB_NOMBRE', 'wupcongress');
+// DEFINE ('DB_NOMBRE', 'u506969443_congress');
 
 DEFINE ('DB_SERVER', 'localhost');
 // DEFINE ('DB_SERVER', 'mysql.hostinger.mx');
