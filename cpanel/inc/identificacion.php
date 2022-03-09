@@ -1,7 +1,10 @@
 
 <?php
 session_start();
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2fb322abddbfd6fcead82d23a06d2178890e153a
 require('../class/funciones.php');
 
 // $email = $mysqli->real_escape_string($_POST['email']);

@@ -7,11 +7,19 @@ class Tema extends Conexion{
 
     }
 
+<<<<<<< HEAD
     public function listaTemas($congreso){
       $sql = "SELECT * FROM temas WHERE id_congreso = '$congreso' ";
       $resultado = $this->conexion_db->query($sql);
       $temas = $resultado->fetch_all(MYSQLI_ASSOC);
       return json_encode($temas);
+=======
+    public function listaTemas(){
+      $sql = "SELECT * FROM temas";
+      $resultado = $this->conexion_db->query($sql);
+      $talleres = $resultado->fetch_all(MYSQLI_ASSOC);
+      return $talleres;
+>>>>>>> 2fb322abddbfd6fcead82d23a06d2178890e153a
     }
 
     public function temasCongreso($evento){

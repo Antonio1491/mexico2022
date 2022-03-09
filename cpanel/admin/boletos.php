@@ -89,7 +89,11 @@ include('../class/funciones.php');
                 </div>
               </div>
               <div class="row align-center">
+<<<<<<< HEAD
                 <input type="hidden" value="CPL2020" name="congreso">
+=======
+                <input type="hidden" value="<?php echo $_SESSION["evento"]; ?>" name="congreso">
+>>>>>>> 2fb322abddbfd6fcead82d23a06d2178890e153a
                 <button type="submit" name=""  class="button">
                   <i class="fi-save"></i> Guardar
                 </button>

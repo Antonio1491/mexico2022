@@ -7,4 +7,8 @@
 
 <link href="//cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css" rel="stylesheet">
 
+<<<<<<< HEAD
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.0/dist/sweetalert2.all.min.js"></script> 
+=======
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+>>>>>>> 2fb322abddbfd6fcead82d23a06d2178890e153a

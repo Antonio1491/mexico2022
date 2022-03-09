@@ -6,6 +6,7 @@ include('../class/funciones.php');
 <html>
   <head>
     <meta charset="utf-8">
+<<<<<<< HEAD
     <title>Alta Ejes Temáticos</title>
     <?php require ("inc/head.php") 
     ?>
@@ -16,6 +17,12 @@ include('../class/funciones.php');
     //   echo $lugar_mensaje;
     // }
     ?>
+=======
+    <title>Hoteles</title>
+    <?php require ("inc/head.php") ;
+    ?>
+
+>>>>>>> 2fb322abddbfd6fcead82d23a06d2178890e153a
   </head>
   <body>
     <main class="row expanded">
@@ -23,7 +30,12 @@ include('../class/funciones.php');
       <?php include("inc/menuEvento.php") ?>
     </div>
     <section class="column medium-10">
+<<<<<<< HEAD
     <?php include('inc/header.php'); ?>
+=======
+    <?php include('inc/header.php'); 
+    ?>
+>>>>>>> 2fb322abddbfd6fcead82d23a06d2178890e153a
       <h1 class="tituloSeccion">Hoteles</h1>
       <div class="column medium-12">
         <div class="row">
@@ -180,6 +192,10 @@ include('../class/funciones.php');
                     <tbody>";
                     $num = 0;
                     foreach ($respuesta as $valor) {
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2fb322abddbfd6fcead82d23a06d2178890e153a
                         $num++;
                         echo "<tr>
                         <td>".$num ."</td>
@@ -209,7 +225,11 @@ include('../class/funciones.php');
 <script src="../js/vendor/what-input.js" type="text/javascript"></script>
     <script src="../js/vendor/foundation.min.js" type="text/javascript"></script>
 
+<<<<<<< HEAD
     <script >
+=======
+    <script>
+>>>>>>> 2fb322abddbfd6fcead82d23a06d2178890e153a
         var x = 0;
   $('#add_field').click (function(e) {
     e.preventDefault();     //prevenir novos clicks
@@ -265,6 +285,7 @@ $("#agregarH").click(function(){
   $(".registro2").fadeToggle();
 });
 
+<<<<<<< HEAD
 // const targetDiv = document.getElementById("registro");
 // const btn = document.getElementById("agregar");
 // const btn2 = document.getElementById("agregarH");
@@ -291,6 +312,11 @@ $(document).ready(function(){
  
 });
     </script> -->
+=======
+
+    </script> 
+
+>>>>>>> 2fb322abddbfd6fcead82d23a06d2178890e153a
 <script>
 $('.eliminar').click(function(e) {
 e.preventDefault(); // Prevent the href from redirecting directly
@@ -316,5 +342,9 @@ warnBeforeRedirect(linkURL);
 })
   }
 </script>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2fb322abddbfd6fcead82d23a06d2178890e153a
   </body>
 </html>

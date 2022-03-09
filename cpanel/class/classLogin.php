@@ -16,12 +16,22 @@ class Login extends Conexion{
         // echo "tenemos datos" . $us . " - ". $pas;
 
           //funciona
+<<<<<<< HEAD
         $sql = $this->conexion_db->query("SELECT * FROM credenciales
                                     WHERE usuario = '$us'
                                     AND password = '$pas' ");
 
         // $sql = $this->conexion_db->query("SELECT * FROM credenciales
         //                             WHERE usuario = '$us'" AND password = '');
+=======
+        // $sql = $this->conexion_db->query("SELECT * FROM credenciales
+        //                             WHERE usuario = '$us'
+        //                             AND password = '$pas' ");
+
+        $sql = $this->conexion_db->query("SELECT * FROM credenciales
+                                    WHERE usuario = '$us'
+                                    AND password = '$pas'");
+>>>>>>> 2fb322abddbfd6fcead82d23a06d2178890e153a
 
         // password_verify($pas, )
 
@@ -44,7 +54,11 @@ class Login extends Conexion{
             $_SESSION['idCredencial'] = $valor['id_credencial'];
             $_SESSION['nombre'] = $valor['nombre'];
             $_SESSION['apellido'] = $valor['apellido'];
+<<<<<<< HEAD
             // $_SESSION['fotografia'] = $valor['fotografia'];
+=======
+            $_SESSION['fotografia'] = $valor['fotografia'];
+>>>>>>> 2fb322abddbfd6fcead82d23a06d2178890e153a
             $_SESSION['tipoUsuario'] = $valor['tipo'];
             $_SESSION['usuario'] = $usuario; // $username coming from the form, such as $_POST['username']
           }
@@ -86,11 +100,17 @@ class Login extends Conexion{
          });
     
     </script>';
+<<<<<<< HEAD
     exit;
     
     }
 
     return true;
+=======
+    
+    }
+    // return true;
+>>>>>>> 2fb322abddbfd6fcead82d23a06d2178890e153a
   }
 
 }

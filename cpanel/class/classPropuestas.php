@@ -25,6 +25,32 @@ class Propuesta extends Conexion{
     //   return $respuesta;
     // }
 
+<<<<<<< HEAD
+=======
+
+    public function getHtmlEjeTematico(){
+      $html ="";
+      $sql ="SELECT * FROM  area_conferencia";
+      $consulta = $this->conexion_db->query($sql);
+      $respuesta = $consulta->fetch_all(MYSQLI_ASSOC);
+
+      $html.='<select name="area" id="area" >
+      <option value="nulo">Seleccione una opción</option>
+      ';
+
+      foreach($respuesta as $valor){
+        $html.='
+      <option value="'.$valor['id_area'].'">'.$valor['nombre_area'].'</option>
+        ';
+      }
+      $html .= '</select>';
+
+      return $html;
+
+
+    }
+
+>>>>>>> 2fb322abddbfd6fcead82d23a06d2178890e153a
     public function listaPropuestas($evento){  //Lista de propuestas registradas en la convocatoria
       $resultado = $this->conexion_db->query("SELECT DISTINCT a.id_conferencia, a.conferencia, a.modalidad, a.status, a.link, a.id_congreso, b.nombre,
                                             b.apellidos, b.pais, b.ciudad FROM conferencias AS a
@@ -86,6 +112,15 @@ class Propuesta extends Conexion{
       $consulta = $this->conexion_db->query($sql);
       return $consulta;
     }
+<<<<<<< HEAD
+=======
+    public function rechazarPropuesta($id_propuesta){
+      $sql= "UPDATE conferencias SET status = 'rechazada' WHERE id_conferencia = $id_propuesta";
+      $consulta = $this->conexion_db->query($sql);
+      return $consulta;
+    }
+    
+>>>>>>> 2fb322abddbfd6fcead82d23a06d2178890e153a
 
     public function eliminar ($id){
       $sql = "DELETE FROM conferencias WHERE id_conferencia = $id ";

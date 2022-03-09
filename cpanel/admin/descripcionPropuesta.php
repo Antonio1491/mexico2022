@@ -3,6 +3,7 @@ include('../class/funciones.php');
 $id = $_GET['id']; ?>
 <!DOCTYPE html>
 <html lang="es">
+<<<<<<< HEAD
   <head>
     <meta charset="utf-8">
     <title>Datos Propuesta</title>
@@ -28,6 +29,35 @@ $id = $_GET['id']; ?>
         <?php include("inc/menu.php") ?>
       </div>
       <section class="column medium-10">
+=======
+<head>
+    <meta charset="utf-8">
+    <title>Administrador</title>
+    <?php require ("inc/head.php") ?>
+   
+  </head>
+  <body>
+    <!-- <header>
+      <div class="rows">
+        <div class="column medium-10 medium-offset-2 text-center">
+          <h4>Propuestas</h4>
+        </div>
+      </div>
+    </header> -->
+    <main class="row expanded">
+      <div class="medium-2">
+        <?php include("inc/menu_propuesta.php") ?>
+      </div>
+    
+      <section class="column medium-10">
+      <?php require ("inc/header.php") ?>
+
+      <div class="rows">
+        <div class="column  text-center">
+          <h4>Datos Propuesta</h4>
+        </div>
+      </div>
+>>>>>>> 2fb322abddbfd6fcead82d23a06d2178890e153a
         <?php
           $datos = new Propuesta();
           $array_descripcion = $datos->descripcionPropuesta($id);

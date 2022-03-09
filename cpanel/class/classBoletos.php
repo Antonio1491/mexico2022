@@ -31,7 +31,21 @@ class Boletos extends Conexion{
     return $data;
 
   }
+<<<<<<< HEAD
 
+=======
+  public function getCongreso(){
+    $sql = "SELECT * FROM congresos WHERE fecha_fin >= DATE(NOW())";
+    $resultado = $this->conexion_db->query($sql);
+    $congreso = $resultado->fetch_all(MYSQLI_ASSOC);
+    if (empty($congreso)){
+        return false;
+    }else {
+
+   return $congreso;
+    }
+}
+>>>>>>> 2fb322abddbfd6fcead82d23a06d2178890e153a
   public function mostrarBoletos($id)
   {
     $sql = "SELECT * FROM boletos

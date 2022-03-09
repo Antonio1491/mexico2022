@@ -1,19 +1,43 @@
 <?php
+<<<<<<< HEAD
 $logo = new congreso();
 $logo = json_decode($logo -> logoById($_SESSION['evento']));
 
 ?>
+=======
+
+$logo = new Congreso();
+$logo = json_decode($logo -> logoById($_SESSION['evento']));
+
+?>
+
+>>>>>>> 2fb322abddbfd6fcead82d23a06d2178890e153a
 <nav class="menuPrincipal">
   <div class="text-center">
     <figure class="logotipoMenu">
       <?php
+<<<<<<< HEAD
       echo "<img src='./../../img/".$logo."'>";
+=======
+      echo "<img src='./../../".$_SESSION['evento']."/img/$logo'>";
+>>>>>>> 2fb322abddbfd6fcead82d23a06d2178890e153a
       ?>
     </figure>
   </div>
   <ul class="vertical menu accordion-menu" data-accordion-menu data-submenu-toggle="true" >
     <li><a href="boletos.php"><i class="fi-ticket"></i> Boletos del Evento</a></li>
+<<<<<<< HEAD
     <li><a href="propuestas.php"><i class="fi-results"></i> Propuestas</a> </li>
+=======
+    <li class="prueba">
+      <a><span><i class="fi-list"></i> Convocatoria</span></a>
+      <ul class="vertical menu">
+      <li><a href="propuestas.php"><i class="fi-results"></i> Propuestas</a> </li>
+      </ul> 
+    </li>
+    <!-- <li><a href="propuestas.php"><i class="fi-results"></i> Propuestas</a> </li> -->
+    <li><a href="poster.php"><i class="fi-bookmark"></i> Posters</a></li>
+>>>>>>> 2fb322abddbfd6fcead82d23a06d2178890e153a
     <li><a href="patrocinadores.php"><i class="fi-trophy"></i> Patrocinadores</a></li>
     <li><a href="temas.php"><i class="fi-lightbulb"></i> Ejes Temáticos</a></li>
     <li><a href="conferencias.php"><i class="fi-projection-screen"></i> Conferencias</a></li>
@@ -26,7 +50,27 @@ $logo = json_decode($logo -> logoById($_SESSION['evento']));
     <li><a href="programa.php"><i class="fi-calendar"></i> Programa</a></li>
     <li><a href="hoteles.php"><i class="fi-marker"></i> Hoteles</a></li> 
     <li><a href="voluntarios.php" ><i class="fi-torsos-all"></i> Voluntarios</a></li>
+<<<<<<< HEAD
     <li><a href="usuarios.php"><i class="fi-torsos-all"></i> Usuarios</a></li>
+=======
+    <!-- <li><a href="agregarPreguntas.php"><i class="fi-results"></i>Añadir preguntas</a> -->
+    <li><a href="boletos.php"><i class="fi-ticket"></i> Boletos del Evento</a></li>
+    <li class="prueba">
+      <a><span><i class="fi-list"></i> Comité congreso</span></a>
+      <ul class="vertical menu ">
+      <li><a href="editarPreguntas.php"><i class="fi-comments"></i>Preguntas Comité</a>
+    <li><a href="avancePropuestas.php"><i class="fi-graph-bar"></i>Avance Representantes</a>
+    <li><a href="promedioPropuestas.php"><i class="fi-graph-pie"></i>Resultados Propuestas</a>       
+  </ul> 
+    </li>
+    <!-- <li><a href="editarPreguntas.php"><i class="fi-comments"></i>Preguntas Comité</a>
+    <li><a href="avancePropuestas.php"><i class="fi-graph-bar"></i>Avance Representantes</a>
+    <li><a href="promedioPropuestas.php"><i class="fi-graph-pie"></i>Resultados Propuestas</a>     -->
+    <li><a href="numeralia.php"><i class="fi-book-bookmark"></i>Numeralia</a>    
+    <li><a href="testimoniales.php"><i class="fi-comment-quotes"></i>Testimoniales</a>    
+    <li><a href="preguntasFrecuentes.php"><i class="fi-comment"></i>Preguntas Frecuentes</a>    
+
+>>>>>>> 2fb322abddbfd6fcead82d23a06d2178890e153a
   </li>
   </ul>
 </nav>

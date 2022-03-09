@@ -28,7 +28,11 @@ warnBeforeRedirect(linkURL);
     showCancelButton: true,
     confirmButtonColor: '#3085d6',
     cancelButtonColor: '#d33',
+<<<<<<< HEAD
     confirmButtonText: 'Si, adelante',
+=======
+    confirmButtonText: 'Sí, adelante',
+>>>>>>> 2fb322abddbfd6fcead82d23a06d2178890e153a
     cancelButtonText:'No, cancelar'
     }).then((result) => {
   if (result.value) {

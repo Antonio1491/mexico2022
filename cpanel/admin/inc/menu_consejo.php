@@ -1,3 +1,11 @@
+<<<<<<< HEAD
+=======
+<?php 
+$usuario =  $_SESSION['idCredencial'];
+
+?>
+
+>>>>>>> 2fb322abddbfd6fcead82d23a06d2178890e153a
 <nav class="menuPrincipal">
   <div class="text-center">
     <figure class="logotipoMenu">
@@ -8,7 +16,16 @@
     <li>
       <!-- <a href="#"><span>2019</span></a>
       <ul class="vertical menu nested"> -->
+<<<<<<< HEAD
         <li><a href="#"><i class="fi-results"></i> Propuestas</a>
+=======
+        <li><a href="propuestas_calificar.php?id_usuario=<?php echo $usuario ?>"><i class="fi-results"></i> Todas las Propuestas</a>
+        <li><a href="propuestarPorCalificar.php?id_usuario=<?php echo $usuario ?>"><i class="fi-page-edit"></i> Propuestas por calificar</a>
+        <li><a href="propuestasCalificadas.php?id_usuario=<?php echo $usuario ?>"><i class="fi-check"></i> Propuestas calificadas</a>
+  
+
+
+>>>>>>> 2fb322abddbfd6fcead82d23a06d2178890e153a
           <!-- <ul class="vertical menu nested">
             <li><a href="resultadosTema.php?tema=2"> Diseño y Planeación</a></li>
             <li><a href="resultadosTema.php?tema=3">Economía y usos del espacio público</a></li>

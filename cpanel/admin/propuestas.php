@@ -83,10 +83,16 @@ $propuestas = new Propuesta();
     <script src="https://code.jquery.com/jquery-3.2.1.js" type="text/javascript"></script>
     <script src="../js/vendor/what-input.js" type="text/javascript"></script>
     <script src="../js/vendor/foundation.min.js" type="text/javascript"></script>
+<<<<<<< HEAD
     <script charset="utf8" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"></script>
     <script charset="utf8" src="https://cdn.datatables.net/1.11.3/js/dataTables.foundation.min.js"></script>
 
     <script charset="utf8" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+=======
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"></script>
+
+    <script charset="utf8" src="https://cdnjs.cl   oudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+>>>>>>> 2fb322abddbfd6fcead82d23a06d2178890e153a
   <script>
     $(document).ready(function() {
     $('#tablaPropuestas').DataTable(
@@ -102,6 +108,14 @@ $propuestas = new Propuesta();
       }
     );
 } );
+<<<<<<< HEAD
+=======
+<script src="../js/vendor/foundation.min.js" type="text/javascript"></script>
+
+<script>
+  $(document).foundation();
+  </script> 
+>>>>>>> 2fb322abddbfd6fcead82d23a06d2178890e153a
   </script>
 <?php require('inc/footer.php') ?>
 

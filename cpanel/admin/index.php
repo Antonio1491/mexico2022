@@ -2,7 +2,17 @@
 require("inc/head.php");
 include('../class/funciones.php');
 $login = new Login();
+<<<<<<< HEAD
 $verificaLogin = $login->verificaLogin();
+=======
+// if (!isset($_SESSION['idCredencial']))
+// {
+//    header("location: ../index.html");
+// }
+$verificaLogin = $login->verificaLogin();
+
+
+>>>>>>> 2fb322abddbfd6fcead82d23a06d2178890e153a
 // $_SESSION['id_usuario'] = $_GET['id'];
 $congresos = new Congreso();
 $array_congresos = $congresos->listaCongresos($_SESSION["idCredencial"], $_SESSION["tipoUsuario"]);
@@ -140,15 +150,26 @@ $array_congresos = $congresos->listaCongresos($_SESSION["idCredencial"], $_SESSI
             </div>
           </fieldset>
         </form>
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 2fb322abddbfd6fcead82d23a06d2178890e153a
       </section>
       <section class="eventos">
         <?php
         foreach ($array_congresos as $valor) 
         {
           //directorio servidor
+<<<<<<< HEAD
         // $dir = $_SERVER['DOCUMENT_ROOT'].'/'.$valor['id_congreso'];
         //directorio local
         $dir = __DIR__.'/../img/'.$valor['id_congreso'];
+=======
+        $dir = $_SERVER['DOCUMENT_ROOT'].'/'.$valor['id_congreso'];
+        //directorio local
+        $dir = $_SERVER['DOCUMENT_ROOT'].'/congresos/'.$valor['id_congreso'];
+>>>>>>> 2fb322abddbfd6fcead82d23a06d2178890e153a
         $hora_inicio = $congresos->formathora12($valor['hora_inicio']);
         $hora_fin = $congresos->formathora12($valor['hora_fin']);
         echo "<article id='".$valor["id_congreso"]."' class='evento'>
@@ -168,7 +189,11 @@ $array_congresos = $congresos->listaCongresos($_SESSION["idCredencial"], $_SESSI
           echo "
           <figure class='text-center'>
           <a href='inc/crearSession.php?evento=".$valor['id_congreso']."' id='".$valor['id_congreso']."'>
+<<<<<<< HEAD
           <img src='./../../img/".$valor["logotipo"]."' alt=''>
+=======
+          <img src='./../../".$valor['id_congreso']."/img/".$valor["logotipo"]."' alt=''>
+>>>>>>> 2fb322abddbfd6fcead82d23a06d2178890e153a
           </a>
           </figure>
           <a href='inc/crearSession.php?evento=".$valor['id_congreso']."' id='".$valor['id_congreso']."'><h2>".$valor['nombre_evento']."</h2></a>
@@ -181,7 +206,11 @@ $array_congresos = $congresos->listaCongresos($_SESSION["idCredencial"], $_SESSI
       ?>
     </section>
   </main>
+<<<<<<< HEAD
   
+=======
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+>>>>>>> 2fb322abddbfd6fcead82d23a06d2178890e153a
   <script src="https://code.jquery.com/jquery-3.2.1.js" type="text/javascript"></script>
   <script src="../js/vendor/what-input.js" type="text/javascript"></script>
   <script src="../js/vendor/foundation.min.js" type="text/javascript"></script>
@@ -194,6 +223,10 @@ $array_congresos = $congresos->listaCongresos($_SESSION["idCredencial"], $_SESSI
   <script>
     $(document).foundation();
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2fb322abddbfd6fcead82d23a06d2178890e153a
     $(document).ready(function() {
       $("#agregar").click(function() {
         $(".registro").fadeToggle();

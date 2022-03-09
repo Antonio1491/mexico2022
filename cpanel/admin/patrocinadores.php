@@ -104,7 +104,11 @@ $patrocinadores = new Patrocinador();
                         echo "<tr>
                         <td>".$num ."</td>
                         <td>" .$valor['patrocinador']. "</td>
+<<<<<<< HEAD
                         <td>" .$valor['tipo']. "</td>
+=======
+                        <td>" .$valor['id_categoria']. "</td>
+>>>>>>> 2fb322abddbfd6fcead82d23a06d2178890e153a
                         <td>" .$valor['link']. "</td>
                         <td><img src='./../../".$_SESSION["evento"]."/img/".$valor['imagen_banner']."'></td>
                         <td class='acciones'><a href='editarPatrocinador.php?id=".$valor['id_patrocinador']."' title='Editar'><i class='fi-pencil'></i></a> |

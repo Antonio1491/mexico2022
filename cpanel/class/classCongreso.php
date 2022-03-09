@@ -171,8 +171,18 @@ class Congreso extends Conexion
         //directorio servidor
         // unlink($_SERVER['DOCUMENT_ROOT']."/$codigo/img/".$valor['logotipo']);
         //diretorio local
+<<<<<<< HEAD
         unlink($_SERVER['DOCUMENT_ROOT']."/congresos/$codigo/img/".$valor['logotipo']);
         return true;
+=======
+        $imagen = $valor['logotipo'];
+
+        if(!empty($imagen)){
+          unlink($_SERVER['DOCUMENT_ROOT']."/congresos/$codigo/img/".$valor['logotipo']);
+          return true;
+        }
+       
+>>>>>>> 2fb322abddbfd6fcead82d23a06d2178890e153a
       }
 
       return false;

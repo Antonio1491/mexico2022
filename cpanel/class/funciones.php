@@ -20,6 +20,13 @@ include "classPatrocinadores.php";
 include "classExpositor.php";
 include "classConferencia.php";
 include "classPrograma.php";
+<<<<<<< HEAD
+=======
+include "classNumeralia.php";
+include "classTestimoniales.php";
+include "preguntasFrecuentes.php";
+include "classPoster.php";
+>>>>>>> 2fb322abddbfd6fcead82d23a06d2178890e153a
 
 function filtrado($datos){
     $datos = trim($datos); // Elimina espacios antes y después de los datos
